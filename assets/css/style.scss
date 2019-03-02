@@ -13,6 +13,7 @@
         &.social                {
             li                  {
                 a               { color: #ffffff; font-size: 40px; }
+                @media(max-width: 768px) { display: inline-block; }
             }
         }
     }
