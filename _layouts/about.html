@@ -25,6 +25,7 @@
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
+      <a id="home-link" href="/"><i class="fa fa-home" aria-hidden="true"></i></a>
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-occupation">{{ site.occupation }}</h2>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
@@ -45,7 +46,7 @@
     </ul>
     </header>
 
-    <main id="content" class="main-content" role="main">
+    <main id="about" class="main-content" role="main">
       {{ content }}
 
       <footer class="site-footer">

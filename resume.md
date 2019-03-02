@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: resume
 title: Resume
 description: My specialties and skills
 ---

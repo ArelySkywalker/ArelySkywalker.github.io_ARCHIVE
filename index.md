@@ -3,9 +3,9 @@ layout: default
 title: Arely Miramontes Rodríguez
 ---
 
-# Hi, I'm Arely. Nice to meet you!
+# Hi, I'm Arely
 
-I am a Web Developer for Powderkeg, based in Madison Wisconsin. I graduated with a Bachelor's in Computational Mathematics with Computer Science at the University of New Mexico. Tech and Sofware has always been my passion. I thrive to build immersive and beautiful websites through carefully crafted code.
+I am a Web Developer for Powderkeg, based in Madison Wisconsin. I graduated with a Bachelor's in Computational Mathematics with Computer Science at the University of New Mexico. Tech and Sofware has always been my passion. I built this site to post coding challenges that I have solutions to - these are very useful to help you prepare for developer interviews, whether you want to be a Web Developer or Software Engineer. Reach out to me if you have any questions or a fun challenge for me. Enjoy!
 
 
 
@@ -19,7 +19,7 @@ Given an array of integers, return a new array such that each element at index i
 # input = [3, 2, 1] => output = [2, 3, 6]
 ```
 
-An easy way to do this would to be to loop through the array, get the product of the array, and for i, divide the product by i to get the new index. But I want to solve this without using division, because what if i = 0?
+An easy way to do this would to be to loop through the array, get the product of the array, and for i, divide the product by i to get the new index. But I want to solve this without using division, because what if i = 0? We can't devide by zero!
 
 ```python
 def indexProductExceptI(array):
@@ -32,24 +32,10 @@ def indexProductExceptI(array):
     return resultArray
 ```
 
-This could also easily be solved with JavaScript :)
-
-```js
-function indexProductExceptI(array) {
-    var resultArray = []; product;
-    for(var i = 0; i < array.length; i++) {
-        product = 1;
-        for(var j = 0; j < array.length; j++) {
-            if(i !== j) product *= array[j];
-        }
-        resultArray.push(product);
-    }
-    return resultArray;
-}
-```
-
 Output:
 ```
 [120, 60, 40, 30, 24]
 [2, 3, 6]
 ```
+
+This would take O(N^2). 

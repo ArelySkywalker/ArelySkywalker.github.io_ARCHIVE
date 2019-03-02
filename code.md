@@ -52,6 +52,8 @@ Output:
 [2, 3, 6]
 ```
 
+This would take O(N^2). 
+**Challenge for you:** Can you come up with a new function that would run in O(N) time and space?
 
 ## Problem #1
 ### Level: Easy
@@ -84,3 +86,5 @@ Output:
 ```
 True
 ```
+
+This would take O(N^2).
