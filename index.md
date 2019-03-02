@@ -9,7 +9,7 @@ I am a Web Developer for Powderkeg, based in Madison Wisconsin. I graduated with
 
 
 
-## Daily Coding Challenge
+## Today's Coding Challenge
 
 Given an array of integers, return a new array such that each element at index i of the new array is the product of all the numbers int he original array except the one at i.
 
