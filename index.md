@@ -11,6 +11,8 @@ I am a Web Developer for Powderkeg, based in Madison Wisconsin. I graduated with
 
 ## Today's Coding Challenge
 
+There are many different ways to solve these problems. This is just my code that I time myself to complete within an hour. If you have better solutions, feel free to email me and I'll mention you and your code in the problem!
+
 Given an array of integers, return a new array such that each element at index i of the new array is the product of all the numbers int he original array except the one at i.
 
 ```

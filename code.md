@@ -5,6 +5,8 @@ title: Daily Coding Problems
 
 I like to challenge myself everyday with coding problems. I will find challenges online and solve them. Once I do, I'll post them here! If you have any questions or any cool challenges for me, just shoot me an email! :)
 
+There are many different ways to solve these problems. This is just my code that I time myself to complete within an hour. If you have better solutions, feel free to email me and I'll mention you and your code in the problem!
+
 ## Problem #2
 ### Level: Hard
 

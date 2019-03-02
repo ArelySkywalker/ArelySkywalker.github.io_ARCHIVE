@@ -25,6 +25,10 @@ main#code                       {
     h3                          { margin-top: 0; }
 }
 
+#view-solution                  { background: #159957; color: #ffffff; cursor: pointer; padding: 10px 20px; width: max-content; border-radius: 30px; 
+    &:hover                     { background: #0b5a33; }
+}
+
 #todays-coding-challenge         { border-top: 1px solid; margin-top: 80px; padding-top: 80px; }
 
 .site-footer-credits            { text-align: center; }
