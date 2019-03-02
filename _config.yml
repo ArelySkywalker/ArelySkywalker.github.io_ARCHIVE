@@ -1,5 +1,67 @@
-title: Arely Miramontes Rodriguez
+title: Arely Miramontes Rodríguez
+occupation: Full-Stack Web Developer & Mentor
 description: Portfolio site for your friendly neighboorhood SpiderDev.
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-cayman
+
+{
+    "versions": {
+        "jekyll": <version>,
+        "kramdown": <version>,
+        "liquid": <version>,
+        "maruku": <version>,
+        "rdiscount": <version>,
+        "redcarpet": <version>,
+        "RedCloth": <version>,
+        "jemoji": <version>,
+        "jekyll-mentions": <version>,
+        "jekyll-redirect-from": <version>,
+        "jekyll-sitemap": <version>,
+        "github-pages": <version>,
+        "ruby": <version>"
+    },
+    "hostname": "github.com",
+    "pages_hostname": "github.io",
+    "api_url": "https://api.github.com",
+    "help_url": "https://help.github.com",
+    "environment": "dotcom",
+    "pages_env": "dotcom",
+    "public_repositories": [ Repository Objects ],
+    "organization_members": [ User Objects ],
+    "build_revision": "cbd866ebf142088896cbe71422b949de7f864bce",
+    "project_title": "ArelySkywalker.github.io",
+    "project_tagline": "A GitHub Pages site to showcase repository metadata",
+    "owner_name": "Arely Miramontes Rodríguez",
+    "owner_url": "arelyskywalker.com",
+    "owner_gravatar_url": "https://github.com/github.png",
+    "repository_url": "https://github.com/ArelySkywalker/ArelySkywalker.github.io",
+    "repository_nwo": "github/ArelySkywalker.github.io",
+    "repository_name": "ArelySkywalker.github.io",
+    "zip_url": "https://github.com/github/ArelySkywalker.github.io/zipball/gh-pages",
+    "tar_url": "https://github.com/github/ArelySkywalker.github.io/tarball/gh-pages",
+    "clone_url": "https://github.com/github/ArelySkywalker.github.io.git",
+    "releases_url": "https://github.com/github/ArelySkywalker.github.io/releases",
+    "issues_url": "https://github.com/github/ArelySkywalker.github.io/issues",
+    "wiki_url": "https://github.com/github/ArelySkywalker.github.io/wiki",
+    "language": null,
+    "is_user_page": false,
+    "is_project_page": true,
+    "show_downloads": true,
+    "url": "http://ArelySkywalker.github.io/ArelySkywalker.github.io", // (or the CNAME)
+    "baseurl": "/ArelySkywalker.github.io",
+    "contributors": [ User Objects ],
+    "releases": [ Release Objects ],
+    "latest_release": [ Release Object ],
+    "private": false,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit"
+    },
+    "source": {
+      "branch": "gh-pages",
+      "path": "/"
+    }
+}
