@@ -5,10 +5,10 @@
 
 .page-header                    {
     .menu                       { list-style-type: none; margin:40px 0; margin-bottom: 0px; padding: 0; 
-        li                      { border: 1px solid #ffffff; border-radius: 3px; display: inline-block; margin: 0 20px;  
-            a                   { color: #ffffff; padding: 10px 20px; transition: all 0.2s linear; }
+        li                      { border-radius: 3px; display: inline-block; margin: 0 20px;  
+            a                   { border: 1px solid rgba(255,255,255,0.2); color: #ffffff; padding: 10px 20px; transition: all 0.2s linear; }
             &:hover             { 
-                a               { background: #ffffff; color: #159957; }
+                a               { background: rgba(255,255,255,0.5); color: #159957; }
             }
         }
     }
