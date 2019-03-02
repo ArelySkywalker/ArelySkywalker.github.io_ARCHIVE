@@ -37,6 +37,7 @@ Output:
 ```
 
 This would take O(N^2). 
+
 **Challenge for you:** Can you come up with a new function that would run in O(N) time and space?
 
 ## Problem #1
