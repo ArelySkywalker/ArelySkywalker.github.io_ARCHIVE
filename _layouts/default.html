@@ -14,6 +14,7 @@
     <meta charset="UTF-8">
 
     <script src="https://use.fontawesome.com/0e431558c3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 {% seo %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,9 +45,24 @@
         <li><a href="https://twitter.com/ArelySkywalker" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
     </ul>
     </header>
+    
 
     <main id="content" class="main-content" role="main">
       {{ content }}
+
+      <script type="text/javascript">
+            jQuery(document).ready(function($){
+
+                $('.language-python').hide();
+
+                $('#view-solution').each(function(i, obj) {
+                    $(this).click(function(){
+                        $(this).next(".language-python").show();
+                    });
+                });
+
+            });
+        </script>
 
       <footer class="site-footer">
         {% if site.github.is_project_page %}

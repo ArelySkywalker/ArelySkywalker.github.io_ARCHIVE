@@ -13,7 +13,7 @@ I am a Web Developer for Powderkeg, based in Madison Wisconsin. I graduated with
 
 Given an array of integers, return a new array such that each element at index i of the new array is the product of all the numbers int he original array except the one at i.
 
-```python
+```
 # Example:
 # input = [1, 2, 3, 4, 5] => output = [120, 60, 40, 30, 24]
 # input = [3, 2, 1] => output = [2, 3, 6]
