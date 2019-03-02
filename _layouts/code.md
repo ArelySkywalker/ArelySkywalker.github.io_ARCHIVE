@@ -1,15 +1,12 @@
 ---
 layout: default
-title: Arely Miramontes Rodríguez
+title: Daily Coding Problems
+description: My specialties and skills
 ---
 
-# Hi, I'm Arely. Nice to meet you!
+[back](./)
 
-I am a Web Developer for Powderkeg, based in Madison Wisconsin. I graduated with a Bachelor's in Computational Mathematics with Computer Science at the University of New Mexico. Tech and Sofware has always been my passion. I thrive to build immersive and beautiful websites through carefully crafted code.
-
-
-
-## Daily Coding Challenge
+## Problem #2 - level Hard
 
 Given an array of integers, return a new array such that each element at index i of the new array is the product of all the numbers int he original array except the one at i.
 
@@ -52,4 +49,36 @@ Output:
 ```
 [120, 60, 40, 30, 24]
 [2, 3, 6]
+```
+
+
+## Problem #2 - level Easy
+
+Given a list of numbers and a number k, return whether any two numbers from the list add up to k.
+
+```python
+# Example:
+# given [10, 15, 3, 7]
+# k = 17
+# return true since 10 + 7 is 17
+```
+We just want to loop through the array and test the sum, once we find an instance where we find a sum match, return true
+
+```python
+def findASum(array, sum):
+    for i in range(len(array)):
+        for j in range(len(array)):
+            if i != j and array[i] + array[j] == sum:
+                return True
+    return False
+
+numbers = [ 10, 15, 3, 7 ]
+k = 22
+
+findASum(numbers, k)
+```
+
+Output:
+```
+True
 ```
