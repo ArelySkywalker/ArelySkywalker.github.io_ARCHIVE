@@ -1,8 +1,10 @@
 ---
-layout: default
+layout: code
 title: Daily Coding Problems
 description: My specialties and skills
 ---
+
+I like to challenge myself everyday with coding problems. I will find challenges online and solve them. Once I do, I'll post them here! If you have any questions or any cool challenges for me, just shoot me an email! :)
 
 ## Problem #2 - level Hard
 

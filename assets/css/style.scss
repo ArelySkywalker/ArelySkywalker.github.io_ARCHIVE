@@ -11,6 +11,10 @@
     }
 }
 
-#todays-coding-challenge         { border: 1px solid; margin-top: 80px; padding-top: 80px; }
+main#code                       {
+    h2                          {  border-top: 1px solid; margin-top: 60px; padding-top: 60px; }
+}
+
+#todays-coding-challenge         { border-top: 1px solid; margin-top: 80px; padding-top: 80px; }
 
 .site-footer-credits            { text-align: center; }
