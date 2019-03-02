@@ -16,7 +16,7 @@ Given an array of integers, return a new array such that each element at index i
 # input = [3, 2, 1] => output = [2, 3, 6]
 ```
 
-An easy way to do this would to be to loop through the array, get the product of the array, and for i, divide the product by i to get the new index. But I want to solve this without using division, because what if i = 0?
+An easy way to do this would to be to loop through the array, get the product of the array, and for i, divide the product by i to get the new index. But I want to solve this without using division.
 
 ```python
 def indexProductExceptI(array):
