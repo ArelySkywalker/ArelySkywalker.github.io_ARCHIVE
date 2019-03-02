@@ -52,7 +52,7 @@ Given a list of numbers and a number k, return whether any two numbers from the 
 ```
 # Example:
 # given [10, 15, 3, 7]
-# k = 17_
+# k = 17
 # return true since 10 + 7 is 17
 ```
 We just want to loop through the array and test the sum, once we find an instance where we find a sum match, return true
