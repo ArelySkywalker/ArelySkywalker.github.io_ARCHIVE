@@ -4,5 +4,12 @@
 @import 'jekyll-theme-cayman';
 
 .page-header                    {
-    .menu                       { margin:40px 0; padding: 0; }
+    .menu                       { list-style-type: none; margin:40px 0; margin-bottom: 0px; padding: 0; 
+        li                      { border: 1px solid #ffffff; border-radius: 3px; display: inline-block; margin: 0 20px;  
+            a                   { color: #ffffff; padding: 10px 20px; transition: all 0.2s linear; }
+            &:hover             { 
+                a               { background: #ffffff; color: #159957; }
+            }
+        }
+    }
 }
