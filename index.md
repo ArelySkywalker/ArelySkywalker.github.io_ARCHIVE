@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Arely Miramontes Rodríguez
 ---
 
 # Hi, I'm Arely. Nice to meet you!
