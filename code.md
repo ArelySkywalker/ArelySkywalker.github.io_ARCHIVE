@@ -13,9 +13,9 @@ There are many different ways to solve these problems. This is just my code that
 Given an array of integers, return a new array such that each element at index i of the new array is the product of all the numbers int he original array except the one at i.
 
 ```
-# Example:
-# input = [1, 2, 3, 4, 5] => output = [120, 60, 40, 30, 24]
-# input = [3, 2, 1] => output = [2, 3, 6]
+# _Example:_
+# _input = [1, 2, 3, 4, 5] => output = [120, 60, 40, 30, 24]_
+# _input = [3, 2, 1] => output = [2, 3, 6]_
 ```
 
 An easy way to do this would to be to loop through the array, get the product of the array, and for i, divide the product by i to get the new index. But I want to solve this without using division.
@@ -51,11 +51,11 @@ Given a list of numbers and a number k, return whether any two numbers from the 
 
 #### View Solution:
 
-```python
-# Example:
-# given [10, 15, 3, 7]
-# k = 17
-# return true since 10 + 7 is 17
+```
+# _Example:_
+# _given [10, 15, 3, 7]_
+# _k = 17_
+# _return true since 10 + 7 is 17_
 ```
 We just want to loop through the array and test the sum, once we find an instance where we find a sum match, return true
 
