@@ -6,7 +6,7 @@ description: My specialties and skills
 
 [back](./)
 
-## Problem #2 - level Hard
+## Problem #1 - level Hard
 
 Given an array of integers, return a new array such that each element at index i of the new array is the product of all the numbers int he original array except the one at i.
 
