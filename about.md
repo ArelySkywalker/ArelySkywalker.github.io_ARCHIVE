@@ -1,7 +1,6 @@
 ---
 layout: about
 title: About Me
-description: On weekends I fight crime and triumph over evil. But you didn't hear it from me.
 ---
 
 ## Hola!
