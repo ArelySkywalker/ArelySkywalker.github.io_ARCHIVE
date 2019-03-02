@@ -29,21 +29,6 @@ def indexProductExceptI(array):
     return resultArray
 ```
 
-This could also easily be solved with JavaScript :)
-
-```js
-function indexProductExceptI(array) {
-    var resultArray = []; product;
-    for(var i = 0; i < array.length; i++) {
-        product = 1;
-        for(var j = 0; j < array.length; j++) {
-            if(i !== j) product *= array[j];
-        }
-        resultArray.push(product);
-    }
-    return resultArray;
-}
-```
 
 Output:
 ```
