@@ -3,9 +3,12 @@ layout: default
 title: Arely Miramontes Rodríguez
 ---
 
+
+![Thumbnail of Arely](assets/images/arely.jpg)
 # Hi, I'm Arely. Nice to meet you!
 
 I am a Web Developer for Powderkeg, based in Madison Wisconsin. I graduated with a Bachelor's in Computational Mathematics with Computer Science at the University of New Mexico. Tech and Sofware has always been my passion. I thrive to build immersive and beautiful websites through carefully crafted code.
+
 
 ## Daily Coding Challenge
 
