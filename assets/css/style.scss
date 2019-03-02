@@ -4,12 +4,19 @@
 @import 'jekyll-theme-cayman';
 
 .page-header                    { position: relative;
-    #home-link                  { position: absolute; top: 40px; left: 40px; color: #ffffff; font-size: 30px; }
+    #home-link                  { position: absolute; top: 20px; left: 40px; color: #ffffff; font-size: 30px; }
     .menu                       { list-style-type: none; margin:40px 0; margin-bottom: 0px; padding: 0; 
         li                      { display: inline-block; margin: 0 20px; 
-            .social             { color: #ffffff; font-size: 40px; }
+            a                   { min-width: 185px; }
+            @media(max-width: 768px) { display: block; }
+        }
+        &.social                {
+            li                  {
+                a               { color: #ffffff; font-size: 40px; }
+            }
         }
     }
+    @media(max-width: 768px) { padding: 6rem 1rem; }
 }
 
 main#code                       {
