@@ -25,7 +25,7 @@ main#code                       {
     h3                          { margin-top: 0; }
 }
 
-h4                  { background: #159957; color: #ffffff; cursor: pointer; padding: 10px 20px; width: max-content; border-radius: 30px; 
+h4                  { background: #159957; color: #ffffff !important; cursor: pointer; padding: 10px 20px; width: max-content; border-radius: 30px; transition: all 0.2s linear;
     &:hover                     { background: #0b5a33; }
 }
 
