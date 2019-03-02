@@ -4,6 +4,8 @@ description: Portfolio site for your friendly neighboorhood SpiderDev.
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-cayman
-github: {
-      repository_url: https://github.com/ArelySkywalker/ArelySkywalker.github.io
-}
+github: 
+  repository_url: https://github.com/ArelySkywalker/ArelySkywalker.github.io
+  repository_name: ArelySkywalker.github.io
+  owner_url: arelyskywalker.com
+  owner_name: Arely Miramontes Rodríguez
