@@ -65,7 +65,7 @@ You can modify the input array in-place.
 ```
 # Example:
 # input = [3, 4, -1, 1] => output = 2
-# input = [[1, 2, 0] => output = 3
+# input = [1, 2, 0] => output = 3
 ```
 
 Since the first missing positive number must be between 1 and len(array) + 1, we can ignore any negative numbers and numbers larger than len(array). By the end of the process, the positive numbers should be grouped together at the beginning of the array. 
