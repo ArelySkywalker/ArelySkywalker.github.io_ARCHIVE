@@ -13,33 +13,41 @@ I am a Web Developer for Powderkeg, based in Madison Wisconsin. I graduated with
 
 There are many different ways to solve these problems. This is just my code that I time myself to complete within an hour. If you have better solutions, feel free to email me and I'll mention you and your code in the problem!
 
-Given an array of integers, return a new array such that each element at index i of the new array is the product of all the numbers int he original array except the one at i.
+Given an array of integers, find the first missing positive integer in linear time and constant space. In other words, find the lowest positive integer that does not exist in the array. The array can contain duplicates and negative numbers as well.
+
+You can modify the input array in-place.
 
 ```
 # Example:
-# input = [1, 2, 3, 4, 5] => output = [120, 60, 40, 30, 24]
-# input = [3, 2, 1] => output = [2, 3, 6]
+# input = [3, 4, -1, 1] => output = 2
+# input = [[1, 2, 0] => output = 3
 ```
 
-An easy way to do this would to be to loop through the array, get the product of the array, and for i, divide the product by i to get the new index. But I want to solve this without using division.
+ Since the first missing positive number must be between 1 and len(array) + 1, we can ignore any negative numbers and numbers larger than len(array). By the end of the process, the positive numbers should be grouped together at the beginning of the array. 
 
 #### View Solution:
 
 ```python
-def indexProductExceptI(array):
-    resultArray = []
-    for i in range(len(array)):
-        product = 1
-        for j in range(len(array)):
-            if i != j: product *= array[j]
-        resultArray.append(product)
-    return resultArray
+def findAmissingPositiveInteger(array):
+    if not array:
+        return 1
+    for i, num in enumerate(array):
+        while i + 1 != array[i] and 0 < array[i] <= len(array):
+            v = array[i]
+            array[i], array[v - 1] = array[v - 1], array[i]
+            array[v - 1] = v
+            if array[i] == array[v - 1]:
+                break
+    for i, num in enumerate(array, 1):
+        if num != i:
+            return i
+    return len(array) + 1
 ```
 
 Output:
 ```
-[120, 60, 40, 30, 24]
-[2, 3, 6]
+2
+3
 ```
 
-This would take O(N^2). 
+This would take O(N) since we swap each number at most once. 
