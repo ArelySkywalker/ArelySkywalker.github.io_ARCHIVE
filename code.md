@@ -8,7 +8,7 @@ I like to challenge myself everyday with coding problems. I will find challenges
 There are many different ways to solve these problems. This is just my code that I time myself to complete within an hour. If you have better solutions, feel free to email me and I'll mention you and your code in the problem!
 
 ## Problem #3
-### Level: Medium
+### Level: Hard
 
 Given an array of integers, find the first missing positive integer in linear time and constant space. In other words, find the lowest positive integer that does not exist in the array. The array can contain duplicates and negative numbers as well.
 
