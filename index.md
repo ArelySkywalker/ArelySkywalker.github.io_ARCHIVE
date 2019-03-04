@@ -13,41 +13,47 @@ I am a Web Developer for Powderkeg, based in Madison Wisconsin. I graduated with
 
 There are many different ways to solve these problems. This is just my code that I time myself to complete within an hour. If you have better solutions, feel free to email me and I'll mention you and your code in the problem!
 
-Given an array of integers, find the first missing positive integer in linear time and constant space. In other words, find the lowest positive integer that does not exist in the array. The array can contain duplicates and negative numbers as well.
+cons(a, b) constructs a pair, and car(pair) and cdr(pair) returns the first and last element of that pair. For example, car(cons(3, 4)) returns 3, and cdr(cons(3, 4)) returns 4.
 
-You can modify the input array in-place.
+Given this implementation of cons:
 
 ```
-# Example:
-# input = [3, 4, -1, 1] => output = 2
-# input = [[1, 2, 0] => output = 3
+#   def cons(a, b):
+#       def pair(f):
+#           return f(a, b)
+#       return pair
 ```
 
- Since the first missing positive number must be between 1 and len(array) + 1, we can ignore any negative numbers and numbers larger than len(array). By the end of the process, the positive numbers should be grouped together at the beginning of the array. 
+Implement car and cdr.
+
+ We can simply create nested functions that takes a pair and returns First or Last.
 
 #### View Solution:
 
 ```python
-def findAmissingPositiveInteger(array):
-    if not array:
-        return 1
-    for i, num in enumerate(array):
-        while i + 1 != array[i] and 0 < array[i] <= len(array):
-            v = array[i]
-            array[i], array[v - 1] = array[v - 1], array[i]
-            array[v - 1] = v
-            if array[i] == array[v - 1]:
-                break
-    for i, num in enumerate(array, 1):
-        if num != i:
-            return i
-    return len(array) + 1
+def cons(a, b):
+    def pair(f):
+        return f(a, b)
+    return pair
+
+def car(pair):
+    def returnFirst(a,b):
+        return a 
+    return pair(returnFirst)
+
+def cdr(pair):
+    def returnLast(a,b):
+        return b 
+    return pair(returnLast)
+
+
+print(car(cons(3,4)))
+print(cdr(cons(3,4)))
 ```
 
 Output:
 ```
-2
 3
+4
 ```
 
-This would take O(N) since we swap each number at most once. 
