@@ -9,51 +9,43 @@ I am a Web Developer for Powderkeg, based in Madison Wisconsin. I graduated with
 
 
 
-## Today's Coding Challenge
+## Current Coding Challenge
 
 There are many different ways to solve these problems. This is just my code that I time myself to complete within an hour. If you have better solutions, feel free to email me and I'll mention you and your code in the problem!
 
-cons(a, b) constructs a pair, and car(pair) and cdr(pair) returns the first and last element of that pair. For example, car(cons(3, 4)) returns 3, and cdr(cons(3, 4)) returns 4.
+Given the mapping a = 1, b = 2, ... z = 26, and an encoded message, count the number of ways it can be decoded.
 
-Given this implementation of cons:
+For example, the message '111' would give 3, since it could be decoded as 'aaa', 'ka', and 'ak'.
 
-```
-#   def cons(a, b):
-#       def pair(f):
-#           return f(a, b)
-#       return pair
-```
+You can assume that the messages are decodable. For example, '001' is not allowed.
 
-Implement car and cdr.
-
- We can simply create nested functions that takes a pair and returns First or Last.
+This looks like a problem that can be solved with recursion. So if a string starts with zero, there's no valid encoding so let's return zero. If the string's length is less than or equal to 1, the number of encodings is 1. If the string is 2 or greater, let's go through the letters or digits, and cound the encodings.
 
 #### View Solution:
 
 ```python
-def cons(a, b):
-    def pair(f):
-        return f(a, b)
-    return pair
+def numEncodings(s):
+    # This covers if the string starts with 0
+    if s.startswith('0'):
+        return 0
+    # This covers if the string is empty
+    elif len(s) <= 1:
+        return 1
 
-def car(pair):
-    def returnFirst(a,b):
-        return a 
-    return pair(returnFirst)
+    total = 0
 
-def cdr(pair):
-    def returnLast(a,b):
-        return b 
-    return pair(returnLast)
+    if int(s[:2]) <= 26:
+        total += numEncodings(s[2:])
 
+    total += numEncodings(s[1:])
+    return total
 
-print(car(cons(3,4)))
-print(cdr(cons(3,4)))
+n = '111'
+print(numEncodings(n))
 ```
 
 Output:
 ```
 3
-4
 ```
 
