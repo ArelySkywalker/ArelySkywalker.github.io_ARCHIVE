@@ -29,8 +29,9 @@ Let f(n) be the number of different ways to climb n stairs. How can we reach the
 
 1. Bet at the (n-2) stair, then climb 2 steps
 2. Bet at the (n-1) stair, then climb 1 step
-For (1), number of ways to reach the the (n-2) stair is f(n-2)
-For (2), number of ways to reach the the (n-1) stair is f(n-1)
+
+*   For (1), number of ways to reach the the (n-2) stair is f(n-2)
+*   For (2), number of ways to reach the the (n-1) stair is f(n-1)
 
 f(n) = f(n-1) + f(n-2) + .... We can use this Fibonacci sequence to help up find the number of ways it would take to reach the Nth step given a set of rules. 
 
