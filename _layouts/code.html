@@ -21,6 +21,17 @@
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+
+    <!-- Include the library. -->
+    <script
+    src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+    ></script>
+
+    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
   </head>
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
@@ -68,7 +79,7 @@
         {% if site.github.is_project_page %}
           <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
         {% endif %}
-        <span class="site-footer-credits">Made with <i class="fa fa-heart" aria-hidden="true"></i> with Jekyll.</span>
+        <img src="https://forthebadge.com/images/badges/gluten-free.svg" /><img src="https://forthebadge.com/images/badges/built-with-love.svg" />
       </footer>
     </main>
   </body>
