@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+
+    {% if site.google_analytics %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}');
+      </script>
+    {% endif %}
+    <meta charset="UTF-8">
+
+    <script src="https://use.fontawesome.com/0e431558c3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+{% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+
+    <!-- Include the library. -->
+    <script
+    src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+    ></script>
+
+    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+      <!-- <h2 class="project-occupation">{{ site.occupation }}</h2> -->
+      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+      {% if site.github.is_project_page %}
+        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+      {% endif %}
+
+      <ul class="menu">
+          <li><a href="about" class="btn">About Me</a></li>
+          <!-- <li><a href="resume" class="btn">Resume</a></li> -->
+          <li><a href="code" class="btn">Coding Problems</a></li>
+          <li><a href="mailto:arelymts@gmail.com" class="btn">Say Hello</a></li>
+      </ul>
+      <ul class="menu social">
+        <li><a href="https://github.com/ArelySkywalker" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.instagram.com/arelyskywalker/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="https://twitter.com/ArelySkywalker" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+    </ul>
+    </header>
+    
+
+    <main id="content" class="main-content" role="main">
+      {{ content }}
+
+      <script type="text/javascript">
+            jQuery(document).ready(function($){
+
+                $('.language-python').hide();
+
+                $('#view-solution').each(function(i, obj) {
+                    $(this).click(function(){
+                        $(this).next(".language-python").show();
+                    });
+                });
+
+            });
+        </script>
+
+        <!-- Prepare a container for your calendar. -->
+        <div class="calendar">
+            <!-- Loading stuff -->
+            Loading the data just for you.
+        </div>
+
+        <script>
+            GitHubCalendar(".calendar", "ArelySkywalker");
+            // or enable responsive functionality
+            GitHubCalendar(".calendar", "ArelySkywalker", { responsive: true });
+        </script>
+          
+
+      <footer class="site-footer">
+        {% if site.github.is_project_page %}
+          <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
+        {% endif %}
+        <img src="https://forthebadge.com/images/badges/gluten-free.svg" /><img src="https://forthebadge.com/images/badges/built-with-love.svg" />
+      </footer>
+    </main>
+  </body>
+</html>
