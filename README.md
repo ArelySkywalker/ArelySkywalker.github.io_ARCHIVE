@@ -107,3 +107,8 @@ If you'd like to preview the theme locally (for example, in the process of propo
 ### Running tests
 
 The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` once before the test script will work.
+
+### My New Badges!
+[![forthebadge](https://github.com/ArelySkywalker/for-the-badge/blob/master/src/images/badges/dance-dance.svg)](https://forthebadge.com)
+[![forthebadge](https://github.com/ArelySkywalker/for-the-badge/blob/master/src/images/badges/not-tricks-illusions.svg)
+[![forthebadge](https://github.com/ArelySkywalker/for-the-badge/blob/master/src/images/badges/made-in-wordpad.svg)
