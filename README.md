@@ -110,5 +110,5 @@ The theme contains a minimal test suite, to ensure a site with the theme would b
 
 ### My New Badges!
 [![forthebadge](https://github.com/ArelySkywalker/for-the-badge/blob/master/src/images/badges/dance-dance.svg)](https://forthebadge.com)
-[![forthebadge](https://github.com/ArelySkywalker/for-the-badge/blob/master/src/images/badges/not-tricks-illusions.svg)
-[![forthebadge](https://github.com/ArelySkywalker/for-the-badge/blob/master/src/images/badges/made-in-wordpad.svg)
+[![forthebadge](https://github.com/ArelySkywalker/for-the-badge/blob/master/src/images/badges/not-tricks-illusions.svg)](https://forthebadge.com)
+[![forthebadge](https://github.com/ArelySkywalker/for-the-badge/blob/master/src/images/badges/made-in-wordpad.svg)](https://forthebadge.com)
